@@ -1,4 +1,4 @@
-## TodoSpace – Requirements-Driven Task Management Prototype (2022–2023)
+## TodoSpace – Requirements-Driven Task Management Prototype (2022)
 ### Team: Tasktronomy
 ### Role: Software Engineering & Requirements Engineering (Individual Contribution Highlighted)
 
