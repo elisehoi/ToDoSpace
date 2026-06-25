@@ -1,37 +1,75 @@
-## Name of the project: To do _Space_ /
-### Name of the group: Tasktronomy /
-### Team member: Elise Høimyr /
+## TodoSpace – Requirements-Driven Task Management Prototype (2022–2023)
+### Team: Tasktronomy
+### Role: Software Engineering & Requirements Engineering (Individual Contribution Highlighted)
 
-To do _Space_ values the ideas of their users above all: if they were stars in the giant space that is the user’s mind. 
-However, stars alone difficultly manage to shine bright to distant planets. 
+TodoSpace is a conceptual task management application designed as part of a requirements engineering and software design project. The goal was to translate structured system requirements into a functional frontend prototype, following the Hermes V methodology and iterative design principles.
 
-As such,  the aim of To do _Space_ is to allow the user easily creating the constellations that are projects, the galaxies that are teams, with each one of their stars, the tasks. In other words; making the most out of their ideas.
+The application models a space-themed task organization system where:
+- projects are “constellations”
+- teams are “galaxies”
+- tasks are “stars”
 
-Easy to use sharing features, a wide range of task organization possibilities, and many tools to improve the user’s comfort will be available with To do _Space_.
+This metaphor was used to structure user interaction and improve conceptual clarity in task organization systems.
 
-# Structure of the directory:
+---
 
-## Model classses:
+## Key Contributions
 
--**Projectfolder.ts**: This class allows the user to crate a folder, give it a name and determining its location with the path. However there are currently no restriction to the type of data to enter in the path string, so invalid paths may be entered and cause errors.
+- Conducted **requirements elicitation and analysis** following the Hermes V methodology
+- Defined system structure and user flows based on functional requirements
+- Developed a **TypeScript-based frontend prototype** using Angular framework concepts
+- Implemented core UI components for task creation, project organization, and user interaction
+- Participated in iterative design and refinement of system specifications
 
--**Calendar.ts**: Currently no available features as it requires some special restrictions to fetch the date. 
+---
 
--**Tasks.ts**(Task creation + task description): Allows the user to create a task, give it a name, a creation date (yet this one still needs to be manually inputed), determine its location (folder position), set a category to it, and a description. All of these are under the format of a string of characters.
+## System Design
 
--**UserAccount.ts**: Credentials of the user (email and password) under the format of a string with currently no verification process.
+The system was implemented as a **frontend-only prototype** with locally managed data structures, focusing on demonstrating system design and user interaction rather than production deployment.
 
-## Views: 
+### Core Modules
 
--**createtask.hbs**: Task creation page (view): the user can input a task name, a due date, a folder location, a description, and submit the form
+- **ProjectFolder.ts**
+  Defines project containers and hierarchical organization of tasks within folders.
 
--**index.hbs**: Main page with the welcome message
+- **Task.ts**
+  Models task entities including name, category, description, and metadata.
 
--**login.hbs**: The user can enter their username and password, then submit them. Still no verification nor identification process occuring.
+- **UserAccount.ts**
+  Defines user structure for authentication concept and user data handling (prototype-level).
 
--**newuser.hbs**: From to create a new user, filled by entering Name, email and a password.
+---
 
+## User Interface (Views)
 
-## Application file: 
+- **index.hbs** – Landing page / system entry point
+- **login.hbs** – Authentication UI prototype
+- **newuser.hbs** – User creation form
+- **createtask.hbs** – Task creation interface with structured input fields
 
-app.ts is the main file for the execution of the application which sends back to the Index page.
+---
+
+## Technology Stack
+
+- TypeScript
+- Angular (framework structure and components)
+- HTML / CSS
+- Angular CLI (development environment)
+- Visual Studio Code
+
+---
+
+## Notes
+
+- No backend or persistent database was implemented (prototype system)
+- Authentication and data persistence were conceptual / UI-level
+- Focus was placed on **requirements engineering, system design, and frontend structure**
+
+---
+
+## What I learned
+
+- Translating requirements into system architecture
+- Structuring software systems using UML-inspired thinking (Hermes V methodology)
+- Building frontend prototypes from specifications
+- Designing user-centered task organization models
